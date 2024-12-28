@@ -56,6 +56,10 @@ echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=n" >> .config #aliddns
 echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >> .config #frpc
 ##内网穿透服务##
 
+##VPN服务##
+echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config #openvpn
+##VPN服务##
+
 sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
 
 fi
